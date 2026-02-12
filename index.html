@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利8娛樂 - APP下載</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body, html {
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .download-link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        
+        .download-link img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://bc842c.ykrrfwmg.com/8aw3w994" class="download-link" id="downloadLink">
+        <img src="" alt="利8娛樂 APP下載" id="downloadImage">
+    </a>
+
+    <script>
+        // 自動偵測裝置並顯示對應圖片
+        const downloadImage = document.getElementById('downloadImage');
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        
+        // 判斷是否為 iOS 裝置
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            // iPhone 版本
+            downloadImage.src = 'li8-ios.jpg';
+        } else {
+            // Android 版本（預設）
+            downloadImage.src = 'li8-android.jpg';
+        }
+    </script>
+</body>
+</html>
